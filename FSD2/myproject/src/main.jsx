@@ -4,8 +4,8 @@ import './index.css'
 
 // import App from './lectures/lec/App.jsx'
 
-import App from './lectures/lec1/App.jsx'
-// import App from './lectures/lec2/App.jsx'
+// import App from './lectures/lec1/App.jsx'
+import App from './lectures/lec2/App.jsx'
 // import App from './lectures/lec3/App.jsx'
 // import App from './lectures/lec4/App.jsx'
 // import App from './lectures/lec5/App.jsx'
