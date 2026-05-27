@@ -1,0 +1,30 @@
+{% extends 'base.html' %}   
+{% load static %}
+
+{% block content %}
+    <h1>Welcome to the Home Page</h1>
+    <img src="{% static 'img/image3.jpg' %}" alt="Image 3">
+
+    <ul>
+    {% for i in data %}
+        <li>{{ i }}</li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
+
+<!-- {% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <img src="{% static 'img/image3.jpg' %}" alt="Image 3">
+</body>
+</html> -->
+

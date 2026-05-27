@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- Without using name attribute in URLs path -->
+    <!-- <nav>
+        <a href="/app1/home">Home</a>
+        <a href="/app1/about">About</a>
+        <a href="/app2/contact">Contact</a>
+        <a href="/app2/hello">Hello</a>
+    </nav> -->
+
+    <!-- Using name attribute in URLs path -->
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'hello' %}">Hello</a>
+    </nav>
+
+    {% block content %}
+        Hello World
+    {% endblock content %}
+
+    <h1>Name : {{ n }}</h1>
+    <p>Facebook Likes: {{ fb }}</p>
+
+    {% if fb > 70 %}
+        <h1>Wow! You are popular</h1>
+    {% elif fb > 50 %}
+        <h1>Not bad! You are getting there</h1>
+    {% else %}
+        <h1>Try to get more likes</h1>
+    {% endif %}
+
+</body>
+</html>

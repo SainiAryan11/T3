@@ -1,0 +1,57 @@
+// Go to path where you want to install django.
+C:\Notes\T3>cd PYTHON2
+
+// Check if python is installed in that path.
+C:\Notes\T3\PYTHON2>python --version
+Python 3.14.2
+
+// Create a virtual environment for your project.
+C:\Notes\T3\PYTHON2>python -m venv env
+
+// Activate Scripts
+C:\Notes\T3\PYTHON2>cd env\Scripts\activate
+
+// install django here.
+(env) C:\Notes\T3\PYTHON2\env\Scripts>pip install django
+
+// Check django version.
+(env) C:\Notes\T3\PYTHON2\env\Scripts>django-admin version
+6.0.5
+
+// Go to the path where you want to create a new project.
+(env) C:\Notes\T3\PYTHON2>cd ../../lec4
+
+// Start the project.
+(env) C:\Notes\T3\PYTHON2\lec4>django-admin startproject b3
+(env) C:\Notes\T3\PYTHON2\lec4>python -m startproject b3
+
+(env) C:\Notes\T3\PYTHON2\lec4>cd b3
+
+// Start The App1.
+(env) C:\Notes\T3\PYTHON2\lec4\b3>python manage.py startapp app1
+
+// Inside b3 settings.py , include app1 in installed apps
+
+// Run The Server.
+(env) C:\Notes\T3\PYTHON2\lec4\b3>python manage.py runserver
+
+// lec5
+
+// Start app1 and app2
+// Inside b3 > settings.py , include app1 and app2 in installed apps
+
+// Inside app1 , create a folder named templates
+// Create home.html and about.html inside templates
+
+// Inside app1 > views.py > create the views for home and about pages
+// Inside app1 > urls.py > add the path for home and about pages
+
+// Inside b3 > urls.py > include the url of app1
+
+// For css, create the folder static in app1 , then create the folder css inisde it , then create style.css inisde it.
+// Now link the css file in home page by using "{% load static %}" in first line of home.html and 
+// "<link rel="stylesheet" href="{% static 'css/style.css' %}">" in head tag of home.html
+
+// For image, create the folder img inside static folder and put your image iniside it.
+// 
+
